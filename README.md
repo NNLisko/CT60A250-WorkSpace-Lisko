@@ -1,4 +1,2 @@
 # GeneralProjectWorkspace
-This is for my own private projects only. for storing personal python projectfiles.
-
-Generally only python CT60A250 files will be held in this repository.
+Personal workspace for CT60A250 programming projects and other projects for python. Anyone with rights can view the repository without being able to commit.
