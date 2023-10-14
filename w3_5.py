@@ -1,4 +1,7 @@
+#takes amount of points (int) as an input
 points = float(input('Enter your number of points:\n'))
+
+#assigns grade based on points
 if points <= 100 and points >= 90:
     print('Your grade is: 5')
 elif points < 90 and points >= 80:
