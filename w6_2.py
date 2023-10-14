@@ -1,17 +1,25 @@
 def input_integers():
-    c = input("Give integers separated by comma:\n")
-    n2 = int(input("Give an integer:\n"))
-    newlist = []
-    final = []
+    c = input("Give integers separated by comma:\n").split(",")
+    global n
+    n = int(input("Give an integer:\n"))
+    if n > len(c):
+        return -1
+    sortlist = []
+    for i in range(len(c)):
+        c[i] = eval(c[i])
     for i in c:
-        if i in newlist:
-            pass
-        else:
-            newlist.append(i)
-    for j in range(n2 + 1):
-        final.append(min(newlist))
-        newlist.remove(min(newlist))
-    print(f"{n2}th smallest element is {max(final)}")
+        if i not in sortlist:
+            sortlist.append(i)
+    final = []
+    for j in range(n):
+        final.append(min(sortlist))
+        sortlist.remove(min(sortlist))
+    return max(final)
 
 
-input_integers()
+value = input_integers()
+
+if value == -1:
+    print("Not suitable")
+else:
+    print(f"{n}th smallest element is {value}")
