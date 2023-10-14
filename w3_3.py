@@ -1,6 +1,8 @@
+#takes integers as input
 n1 = int(input('Enter the first number:\n'))
 n2 = int(input('Enter the second number:\n'))
 
+#presents user with operation options
 print('The calculator can perform the following operations:')
 print('1) Add')
 print('2) Subtract')
@@ -9,6 +11,7 @@ print('4) Divide')
 print(f'The numbers you entered are {n1} and {n2}')
 choise = int(input('Select the operation (1-4):\n'))
 
+#program executes operation based on choise
 if choise == 1:
     print(f'Selection 1: {n1} + {n2} = {round(n1 + n2, 2)}')
 elif choise == 2:
