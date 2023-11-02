@@ -4,5 +4,5 @@ def print_names(fileName):
     print(*sorted(c), sep="\n")
 
 
-fileName = input("Give the name of the input file:")
+fileName = input("Give the name of the input file:\n")
 print_names(fileName)
